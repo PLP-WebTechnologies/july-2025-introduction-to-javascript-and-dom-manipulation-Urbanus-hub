@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🚀 JavaScript Fundamentals Assignment</h1>
+      <p>Demonstrating variables, functions, loops, and DOM manipulation</p>
+    </header>
+
+    <main>
+      <!-- Part 1: JavaScript Basics -->
+      <section class="part-section">
+        <h2>📚 Part 1: JavaScript Basics</h2>
+        <div class="demo-container">
+          <h3>User Information Form</h3>
+          <div class="input-group">
+            <label for="userName">Enter your name:</label>
+            <input type="text" id="userName" placeholder="Your name" />
+          </div>
+          <div class="input-group">
+            <label for="userAge">Enter your age:</label>
+            <input type="number" id="userAge" placeholder="Your age" />
+          </div>
+          <button id="checkEligibility">Check Voting Eligibility</button>
+          <div id="eligibilityResult" class="result"></div>
+        </div>
+      </section>
+
+      <!-- Part 2: Functions -->
+      <section class="part-section">
+        <h2>❤️ Part 2: JavaScript Functions</h2>
+        <div class="demo-container">
+          <h3>Calculator Functions</h3>
+          <div class="input-group">
+            <label for="num1">Number 1:</label>
+            <input type="number" id="num1" placeholder="Enter first number" />
+          </div>
+          <div class="input-group">
+            <label for="num2">Number 2:</label>
+            <input type="number" id="num2" placeholder="Enter second number" />
+          </div>
+          <div class="button-group">
+            <button id="addBtn">Add</button>
+            <button id="multiplyBtn">Multiply</button>
+          </div>
+          <div id="calculatorResult" class="result"></div>
+
+          <h3>String Formatter</h3>
+          <div class="input-group">
+            <label for="textInput">Enter some text:</label>
+            <input
+              type="text"
+              id="textInput"
+              placeholder="Type something here"
+            />
+          </div>
+          <button id="formatText">Format Text</button>
+          <div id="formattedText" class="result"></div>
+        </div>
+      </section>
+
+      <!-- Part 3: Loops -->
+      <section class="part-section">
+        <h2>🔁 Part 3: JavaScript Loops</h2>
+        <div class="demo-container">
+          <h3>Number List Generator</h3>
+          <div class="input-group">
+            <label for="listSize">How many numbers to generate?</label>
+            <input
+              type="number"
+              id="listSize"
+              placeholder="Enter a number"
+              min="1"
+              max="20"
+            />
+          </div>
+          <button id="generateList">Generate List</button>
+          <div id="numberList" class="result"></div>
+
+          <h3>Array Processor</h3>
+          <button id="processArray">Process Sample Array</button>
+          <div id="arrayResult" class="result"></div>
+
+          <h3>Countdown Timer</h3>
+          <div class="input-group">
+            <label for="countdownStart">Start countdown from:</label>
+            <input
+              type="number"
+              id="countdownStart"
+              placeholder="Enter starting number"
+              min="1"
+              max="10"
+            />
+          </div>
+          <button id="startCountdown">Start Countdown</button>
+          <div id="countdownDisplay" class="result"></div>
+        </div>
+      </section>
+
+      <!-- Part 4: DOM Manipulation -->
+      <section class="part-section">
+        <h2>🌐 Part 4: DOM Manipulation</h2>
+        <div class="demo-container">
+          <h3>Interactive Elements</h3>
+
+          <div class="dom-demo">
+            <h4>Color Theme Toggle</h4>
+            <button id="themeToggle">Toggle Dark Theme</button>
+            <p id="themeStatus">Current theme: Light</p>
+          </div>
+
+          <div class="dom-demo">
+            <h4>Dynamic Content Creation</h4>
+            <div class="input-group">
+              <label for="itemText">Add new item:</label>
+              <input type="text" id="itemText" placeholder="Enter item text" />
+            </div>
+            <button id="addItem">Add Item</button>
+            <ul id="dynamicList"></ul>
+          </div>
+
+          <div class="dom-demo">
+            <h4>Element Style Changer</h4>
+            <div id="styleBox" class="style-box">
+              <p>This box will change styles!</p>
+            </div>
+            <div class="button-group">
+              <button id="changeColor">Change Color</button>
+              <button id="changeSize">Change Size</button>
+              <button id="resetStyles">Reset Styles</button>
+            </div>
+          </div>
+
+          <div class="dom-demo">
+            <h4>Text Manipulation</h4>
+            <p id="manipulatedText">
+              Click the buttons below to see this text change!
+            </p>
+            <div class="button-group">
+              <button id="makeUppercase">UPPERCASE</button>
+              <button id="makeLowercase">lowercase</button>
+              <button id="toggleVisibility">Toggle Visibility</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Check the browser console for additional output and debugging
+        information!
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
